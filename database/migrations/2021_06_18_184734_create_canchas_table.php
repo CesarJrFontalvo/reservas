@@ -15,11 +15,9 @@ class CreateCanchasTable extends Migration
     {
         Schema::create('canchas', function (Blueprint $table) {
             $table->integer('id_cancha');
-	        $table->integer('id_reserva');
             $table->string('name');
             $table->string('lugar');
             $table->string('telefono');
-            $table->string('fotos');
             $table->timestamps();
         });
     }
